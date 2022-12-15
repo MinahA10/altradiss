@@ -1,0 +1,22 @@
+.no-result {
+  text-align: center;
+  padding: 2rem;
+  color: #b1b2b3;
+}
+
+.no-result .search-icon {
+  font-size: 2rem;
+}
+
+.no-result p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+
+.no-result p svg {
+  font-size: 1.5rem;
+  color: #f47521;
+}

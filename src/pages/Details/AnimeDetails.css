@@ -1,0 +1,105 @@
+.anime-detail {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.anime-detail .left {
+  flex: 2;
+}
+
+.anime-detail .left img {
+  width: 100%;
+}
+
+.anime-detail .right {
+  flex: 3;
+}
+
+.anime-detail .right span {
+  color: #72e7e1;
+  text-transform: capitalize;
+  margin-right: 0.2rem;
+}
+
+.anime-detail .right p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #b1b2b3;
+}
+
+.anime-detail .right .synopsis {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.anime-detail .right .button {
+  margin-top: 1.5rem;
+}
+
+.anime-detail .right a {
+  text-decoration: none;
+  background-color: #72e7e1;
+  padding: 0.3rem 1.8rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.anime-detail .right a:hover {
+  color: #000;
+}
+
+/* =================media queries================ */
+
+@media screen and (max-width: 1100px) {
+  .anime-detail {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .anime-detail {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .anime-detail .right {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .anime-detail .right p {
+    font-size: 0.8rem;
+  }
+  .anime-detail .right a {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .anime-detail {
+    padding: 0.4rem;
+  }
+  .anime-detail .right p {
+    font-size: 0.7rem;
+  }
+
+  .anime-detail .right .button {
+    margin-top: 1rem;
+  }
+
+  .anime-detail .right a {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.7rem;
+  }
+}

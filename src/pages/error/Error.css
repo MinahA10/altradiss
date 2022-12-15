@@ -1,0 +1,76 @@
+.error {
+  padding: 2rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error p {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.error svg {
+  color: #f47521;
+  font-size: 3.5rem;
+}
+
+.error a {
+  background-color: #f47521;
+  padding: 0.4rem 1.4rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: 0.4s;
+}
+
+.error a:hover {
+  color: #000;
+}
+
+/* ===========media queries=========== */
+@media screen and (max-width: 1025px) {
+  .error {
+    height: 80vh;
+  }
+
+  .error p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .error p {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .error p {
+    font-size: 2rem;
+  }
+  .error svg {
+    font-size: 2.5rem;
+  }
+
+  .error a {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .error {
+    height: 70vh;
+  }
+  .error p {
+    font-size: 1.5rem;
+  }
+}

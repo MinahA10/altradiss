@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 6rem;
+}
+
+
+.App {
+  background-color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+button.accordion-button.collapsed {
+  padding: 5rem;
+}
+.home {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.home .left {
+  height: 100vh;
+  overflow: auto;
+}
+.home .right {
+  height: 100vh;
+  overflow: auto;
+  background-color: #000;
+}
+
+/* ==============media queries================ */
+
+@media screen and (max-width: 1025px) {
+  /* hide scroll bar  */
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+  .serch-list::-webkit-scrollbar {
+    display: none;
+  }
+  .recommendations::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .right {
+    display: none;
+  }
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
