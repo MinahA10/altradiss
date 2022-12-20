@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
-import Produits from './pages/Home/produit';
+import Produits from './pages/produits/produit';
 import Services from './pages/services';
 import Solution from './pages/solution';
 import Contact from './pages/contact';

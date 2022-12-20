@@ -8,8 +8,8 @@ const Produit = () => {
   return (
     <section className='home'>
       <div className='left'>
-        {/* <Search />
-        <SearchList /> */}
+         {/* <Search />
+        <SearchList />  */}
         <Recommendations />
         <h1>produits</h1>
       </div>
