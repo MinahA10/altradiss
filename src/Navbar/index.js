@@ -15,8 +15,6 @@ const Navbar1 = () => {
       <Nav>
         <NavLink to='/' >
           <img src='/logo-ALT.png' alt='logo' />
-
-          
         </NavLink>
         <Bars />
         <NavMenu>
@@ -41,7 +39,8 @@ const Navbar1 = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/signIn'  >    
-        <BsFillPersonFill />  Login </NavBtnLink>
+          <BsFillPersonFill />  Login </NavBtnLink>²
+        
         </NavBtn>
       </Nav>
    
