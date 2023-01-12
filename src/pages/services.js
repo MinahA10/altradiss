@@ -12,8 +12,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Services () {
   return (
-  
     <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
+
       <MDBCol>
         <MDBCard>
           <MDBCardImage
@@ -80,10 +80,12 @@ function Services () {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle>DES OBJECTIFS DE GESTION</MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              ALTRADISS dispose d’un système de programme de gestion moderne.
+              Nous vous offrons une interface conviviale et facile à manipuler pour faciliter la gestion des outils à votre disposition.
+              Selon vos besoins, nous suggérons des solutions wifi et un système d’administration de réseaux
+              établie par nos soins.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>

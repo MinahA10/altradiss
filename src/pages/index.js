@@ -3,7 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   MDBBtn
 } from 'mdb-react-ui-kit';
-
+import Contact from "../pages/contact"
+import Service from "../pages/services"
+import Solution from "../pages/solution"
+import Pourquoi from "../pages/pourquoi"
 // slider
 class BootstrapCarouselComponent extends React.Component {
   render() {
@@ -19,14 +22,20 @@ class BootstrapCarouselComponent extends React.Component {
             <div className='text-white'>
               <h1 className='mb-3'>ALTRADISS</h1>
               <h4 className='mb-3'>VOTRE PARTENAIRE EN SOLUTION INFORMATIQUE</h4>
-              <MDBBtn tag="a" outline size="lg" href='produit'>
+              <MDBBtn tag="a" outline size="lg" href='Products'>
                Voir nos Produits
               </MDBBtn>
             </div>
           </div>
         </div>
       </div>
+      <Service />
+      <Solution />
+      <Pourquoi />
+      <Contact/>
     </header>
+
+    
   
   )
   };

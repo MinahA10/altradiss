@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Search from '../../components/search/Search'
-import Recommendations from '../../components/animeList/Recommendations'
-import Ranking from '../../components/animeList/Ranking'
-import SearchList from '../../components/animeList/SearchList'
-import Navbar from "../../components/navbar/Navbar"
+import Product from "../panier/Products"
+
 const Produit = () => {
   return (
     <section className='home'>
       <div className='left'>
-         {/* <Search />
-        <SearchList />  */}
-        <Navbar/>
-        <Recommendations />
-        <h1>produits</h1>
+        <Product/>
       </div>
       <div className='right'>
-        <Ranking />
+      <Product/>
       </div>
     </section>
   )

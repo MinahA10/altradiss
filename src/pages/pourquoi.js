@@ -3,13 +3,14 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup'
 
 const pourquoi = () => {
-return (
+  return (
     <div
-    style={{
+      style={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'top',
-        height: '90vh'
+        height: '90vh',
+      
     }}
     >
     <h1>Pourquoi Nous ?</h1>

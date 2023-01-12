@@ -27,10 +27,10 @@ const Navbar1 = () => {
           <NavLink to='/pourquoi' activeStyle>
             Pourquoi Nous ?
           </NavLink>
-          <NavLink to='/Produits' activeStyle>
+          <NavLink to='/Products' activeStyle>
            Nos produits
           </NavLink>
-          <NavLink to='/contact-us' activeStyle>
+          <NavLink to='/contact' activeStyle>
             Contact Us
           </NavLink>
           
@@ -39,7 +39,7 @@ const Navbar1 = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/signIn'  >    
-          <BsFillPersonFill />  Login </NavBtnLink>²
+          <BsFillPersonFill /> Login </NavBtnLink>
         
         </NavBtn>
       </Nav>

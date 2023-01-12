@@ -4,7 +4,7 @@ import { BsFillCartFill } from "react-icons/bs";
 import {useNavigate} from 'react-router-dom'
 import { useSelector } from 'react-redux';
 
-function Home() {
+function Product() {
 
   const navigate = useNavigate()
   const cart = useSelector((state) => state.cart)
@@ -73,4 +73,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Product
