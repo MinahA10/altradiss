@@ -12,7 +12,11 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Services () {
   return (
-    <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
+    <MDBCard>
+       <MDBCardBody>
+
+      <h1>Nos services </h1>
+    <MDBRow className=''>
 
       <MDBCol>
         <MDBCard>
@@ -91,7 +95,8 @@ function Services () {
         </MDBCard>
       </MDBCol>
     </MDBRow>
-    
+    </MDBCardBody>
+    </MDBCard>
   
   );
 };

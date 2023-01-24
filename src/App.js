@@ -6,7 +6,6 @@ import Home from './pages';
 import Produits from './pages/produits/produit';
 import Services from './pages/services';
 import Solution from './pages/solution';
-import Contact from './pages/contact';
 import SignIn from './pages/signIn';
 import SignUp from './pages/signUp';
 import SignUpbis from './pages/signUpbis';
@@ -19,6 +18,9 @@ import Scroll from "./components/scrolltop";
 import Cart from './pages/panier/Cart';
 import Product from './pages/panier/Products';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import Signaler from './pages/signaler';
+import ProfilePage from './pages/profil';
+import Commande from './pages/commandsp';
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 function App() {
@@ -38,13 +40,15 @@ function App() {
         <Route path='/solution' element={<Solution/>} />
         <Route path='/Produits' element={<Produits/>} />
         <Route path='/pourquoi' element={<Pourquoi/>} />
-        <Route path='/contact' element={<Contact/>} />
+        <Route path='/profil' element={<ProfilePage/>} />
         <Route path='/signUp' element={<SignUp/>} />
         <Route path='/signIn' element={<SignIn/>} />
         <Route path='/signUpbis' element={<SignUpbis/>} />
         <Route path='/*' element={<Error />} />
         <Route path='/cart' element={<Cart />} />
-        <Route  path='/Products' element={<Product />}/>
+        <Route path='/Products' element={<Product />} />
+        <Route path='/signaler' element={<Signaler />} />
+        <Route path='/commandsp' element={<Commande />} />
        </Routes>
       <Scroll/>
       <Footer/>

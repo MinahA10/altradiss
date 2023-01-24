@@ -10,8 +10,8 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   
-  /* Third Nav */
-  /* justify-content: flex-start; */
+
+ justify-content: flex-start; 
 `;
 export const Navbar = styled.nav`
   background: #000;
@@ -20,8 +20,8 @@ export const Navbar = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* Third Nav */
-  /* justify-content: flex-start; */
+ 
+ justify-content: flex-start; 
 `;
 
 export const NavLink = styled(Link)`
@@ -57,14 +57,15 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
 
-  /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
+  
+justify-content: flex-end;
+ width: 100vw; 
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
+
 export const NavBtnLink = styled(Link)`
 border-radius: 4px;
   background: #256ce1;
@@ -75,8 +76,7 @@ border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  /* Second Nav */
+  
   margin-left: 24px;
 
   &:hover {
@@ -91,14 +91,12 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-right: -24px;
 
-  /* Second Nav */
-  /* margin-right: 24px; */
+margin-right: 24px; 
+ width: 100vw;
 
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
+white-space: nowrap; 
 
   @media screen and (max-width: 768px) {
-    display: none;
+  display: none;
   }
 `;

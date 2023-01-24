@@ -13,7 +13,9 @@ import './solution.css';
 
 const Solution = () => {
   return (
-    
+    <MDBCard>
+        <MDBCardBody>
+      <h1>Solution proposés </h1>
     <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="0">
        <Accordion.Header>Accompagnement dans le domaine de nouvelles technologies </Accordion.Header>
@@ -178,8 +180,9 @@ const Solution = () => {
     </MDBRow>
     </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
-    
+        </Accordion>
+        </MDBCardBody>
+    </MDBCard>
       
   );
 };

@@ -1,5 +1,7 @@
 import React from 'react';
-
+import {
+  MDBCard
+} from 'mdb-react-ui-kit';
 const Contact = () => {
       const [formStatus, setFormStatus] = React.useState("Send");
       const onSubmit = (e) => {
@@ -13,7 +15,8 @@ const Contact = () => {
         };
         console.log(conFom);
       };
-      return (
+  return (
+        <MDBCard>
         <div className="container mt-5">
           <h2 className="mb-3">Nous Contactez</h2>
           <form onSubmit={onSubmit}>
@@ -40,7 +43,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      
+       </MDBCard>
   
     
     

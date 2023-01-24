@@ -10,7 +10,7 @@ import {
 import { BsFillPersonFill } from "react-icons/bs";
 // Import the default CSS
 import "rsuite/dist/rsuite.min.css";
-const Navbar1 = () => {
+const Navbar = () => {
   return (
       <Nav>
         <NavLink to='/' >
@@ -30,8 +30,8 @@ const Navbar1 = () => {
           <NavLink to='/Products' activeStyle>
            Nos produits
           </NavLink>
-          <NavLink to='/contact' activeStyle>
-            Contact Us
+          <NavLink to='/profil' activeStyle>
+            Profil
           </NavLink>
           
           {/* Second Nav */}
@@ -47,4 +47,4 @@ const Navbar1 = () => {
   );
 };
 
-export default Navbar1;
+export default Navbar;
