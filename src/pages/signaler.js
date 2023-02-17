@@ -4,19 +4,18 @@ import { MDBInput,MDBCard,MDBCardBody,MDBTextArea,MDBInputGroup,MDBBtn } from 'm
 export default function App() {
     return (
         
+          
+        <MDBCard className='' sm='4'>
             
-        <MDBCard>
-                <MDBCardBody>
-                    <h1>Signalement produits</h1>
-                <MDBInputGroup className='mb-3'>
+        <MDBCardBody>
+            <h1>Signalement produits</h1>
                     <MDBInput label='Nom du produits' id='form1' type='text' />
-                </MDBInputGroup>
+             <br></br>
                     <MDBTextArea label='Message' id='textAreaExample' rows={4} />
                     <br></br>
                     <MDBBtn>Envoyer</MDBBtn>
             </MDBCardBody>
-            
             </MDBCard>
-           
+          
   );
 }

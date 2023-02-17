@@ -1,15 +1,15 @@
 
-import React, { useEffect } from 'react';
-
+import React from 'react';
+import ScrollUp from '../scrollUp';
+import './scroll.css';
+import { MDBIcon } from 'mdb-react-ui-kit';
 const ScrollUpButton=()=> {
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
-    <button onClick={handleClick}>
-      Scroll Up
-    </button>
+    <div style={{ fontSize: '2rem' }}>
+  <ScrollUp showUnder={100} >
+    <span><MDBIcon  fas icon="chevron-up"/></span>
+      </ScrollUp>
+      </div>
   );
 }
 export default ScrollUpButton;

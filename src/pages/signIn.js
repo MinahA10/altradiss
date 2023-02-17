@@ -1,5 +1,5 @@
 import './login.css'
-import React from 'react';
+import React , { useState } from 'react';
 import {
     MDBBtn,
     MDBContainer,
@@ -7,66 +7,73 @@ import {
     MDBCol,
     MDBCard,
     MDBCardBody,
-    MDBInput,
-    MDBCheckbox,
-    MDBIcon
+  MDBInput,
+    MDBValidation,
+  MDBValidationItem
+  
   }
   from 'mdb-react-ui-kit';
 
 
-function SignIn () {
-    return (
+function SignIn() {
+  
+   const [formValue, setFormValue] = useState({
+     email: '',
+     mdp: '',
+   });
+  const onChange = (e: any) => {
+    setFormValue({ ...formValue, [e.target.name]: e.target.value });
+  };
+  return (
+      
         <MDBContainer fluid className='p-4 background-radial-gradient overflow-hidden'>
 
       <MDBRow>
 
         <MDBCol md='6' className='text-center text-md-start d-flex flex-column justify-content-center'>
 
-          <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{color: 'hsl(218, 81%, 95%)'}}>
-            The best offer <br />
-            <span style={{color: 'hsl(218, 81%, 75%)'}}>for your business</span>
+          <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{color: 'hsl(218, 81%, 50%)'}}>
+            ALTRADISS<br />
+            <span style={{color: 'hsl(218, 81%, 75%)'}}>EVOLVE FURTHER</span>
           </h1>
 
           <p className='px-3' style={{color: 'hsl(218, 81%, 85%)'}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-            quibusdam tempora at cupiditate quis eum maiores libero
-            veritatis? Dicta facilis sint aliquid ipsum atque?
-          </p>
-
-        </MDBCol>
-
-        <MDBCol md='6' className='position-relative'>
-
+            VOTRE PARTENAIRE EN SOLUTION INFORMATIQUE
+              </p>
+              </MDBCol>
+          
+          <MDBCol md='5' className='position-relative '>
           <div id="radius-shape-1" className="position-absolute rounded-circle shadow-5-strong"></div>
           <div id="radius-shape-2" className="position-absolute shadow-5-strong"></div>
-
           <MDBCard className='my-5 bg-glass'>
-            <MDBCardBody className='p-5'>
-
-            
-
-              <MDBInput wrapperClass='mb-4' label='Email' id='form3' type='email'/>
-              <MDBInput wrapperClass='mb-4' label='Password' id='form4' type='password'/>
-
-              {/* <div className='d-flex justify-content-center mb-4'>
-                <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label="J'accepte toutes les déclarations dans les conditions d'utilisation" />
-              </div> */}
-
-              <MDBBtn className='w-100 mb-4' size='md'>sign In</MDBBtn>
-
+                <MDBCardBody className='p-5'>
+           <MDBValidation className='row g-3'>
+      <MDBValidationItem className='' feedback='Entrer un Email valide.'>
+          <MDBInput wrapperClass='mb-4' label='Adresse mail' id='form3' type='email' value={formValue.email} name='email' onChange={onChange} required />
+                </MDBValidationItem>
+             
+              <MDBValidationItem>
+                 <MDBValidationItem className='' feedback='Entrée un mot de passe valide.' invalid>
+                  <MDBInput wrapperClass='mb-4' label='mot de passe' id='form4' type='password' value={formValue.mdp} name='mdp' onChange={onChange} required />
+                  </MDBValidationItem>
+                </MDBValidationItem>
+                
+                <MDBBtn className='w-100 mb-4' size='md' type='submit'>Se connectez</MDBBtn>
+               </MDBValidation>
+                <div>
+                <p className="mb-0">Pas encore de compte? <a href="signUp" class="text-black-50 fw-bold">S'enregistrer</a></p>
+              </div> 
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
               
-              <div>
-                <p className="mb-0">Don't have an account? <a href="signUp" class="text-white-50 fw-bold">Sign Up</a></p>
-              </div>
-            </MDBCardBody>
-          </MDBCard>
+              </MDBRow>
+      </MDBContainer>
+        
+  
+  
 
-        </MDBCol>
-
-      </MDBRow>
-
-    </MDBContainer>
+      
     );
   }
 

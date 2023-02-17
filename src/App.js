@@ -25,13 +25,6 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 
 function App() {
   return (
-  
-
-
-       
-      
-
-
     <div className="app">
       <Navbar/>
        <Routes>
@@ -53,9 +46,6 @@ function App() {
       <Scroll/>
       <Footer/>
     </div>
-    
-    
-
   );
   
 }

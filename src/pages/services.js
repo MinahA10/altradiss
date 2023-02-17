@@ -14,19 +14,18 @@ function Services () {
   return (
     <MDBCard>
        <MDBCardBody>
-
-      <h1>Nos services </h1>
+      <h1 style={{color:'#256CE1'}}>Nos services</h1>
     <MDBRow className=''>
 
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/041.webp'
+            src='./service client.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>SERVICE CLIENT</MDBCardTitle>
+            <MDBCardTitle><strong>SERVICE CLIENT</strong></MDBCardTitle>
             <MDBCardText>
             Nous mettons au service de notre clientèle, équipe disponible disposant de certification internationale, 
     disponible 24/7 pour notifier nos clients dès apparition d’une anomalie durant le monitoring.
@@ -37,12 +36,12 @@ function Services () {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src='./équipe disponible 1.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>UNE EQUIPE DISPONIBLE</MDBCardTitle>
+            <MDBCardTitle><strong>UNE EQUIPE DISPONIBLE</strong></MDBCardTitle>
             <MDBCardText>
             Les besoins de nos clients constituent notre priorité. Ainsi, 
    toute anomalie constatée lors d’un monitoring est instantanément signalée. Nous offrons une intervention rapide, 
@@ -54,12 +53,12 @@ function Services () {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='./solutions innovantes.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>DES SOLUTIONS INNOVANTES</MDBCardTitle>
+            <MDBCardTitle><strong>DES SOLUTIONS INNOVANTES</strong></MDBCardTitle>
             <MDBCardText>
             ALTRADISS est un professionnel dans le domaine de la technologie informatique. Ingénierie de produit, gestions de garantie, 
      maintenance de parc informatique, infrastructure de réseau, etc. relèvent de notre compétence.
@@ -79,12 +78,12 @@ function Services () {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src='./Objectif de gestion.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>DES OBJECTIFS DE GESTION</MDBCardTitle>
+            <MDBCardTitle><strong>DES OBJECTIFS DE GESTION</strong></MDBCardTitle>
             <MDBCardText>
               ALTRADISS dispose d’un système de programme de gestion moderne.
               Nous vous offrons une interface conviviale et facile à manipuler pour faciliter la gestion des outils à votre disposition.

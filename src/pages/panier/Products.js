@@ -18,9 +18,13 @@ function Product() {
   }
 
   return (
+    
     <div className="home">
+      
       <div className="home__container">
+        
         <div className="home__row">
+          
           <Item
             id={4}
             title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"

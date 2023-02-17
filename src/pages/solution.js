@@ -15,7 +15,7 @@ const Solution = () => {
   return (
     <MDBCard>
         <MDBCardBody>
-      <h1>Solution proposés </h1>
+      <h1 style={{color:'#256CE1'}}>Solution proposés </h1>
     <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="0">
        <Accordion.Header>Accompagnement dans le domaine de nouvelles technologies </Accordion.Header>
@@ -25,15 +25,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/041.webp'
+            src='./sécurisation des données 2.webp'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>La sécurisation des données</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+                        solution ayant pour but de vous garder loin des piratages, renforcer
+                        l'accès à vos informations sensibles.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -41,15 +41,14 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src='./vente de pdt info.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>La vente des produits</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              La vente et le commerce des produits reconditionnés dans une optique verte.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -57,15 +56,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='./software_IT-removebg-preview.png'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>Le Software</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+                Dévzloppement de logicel adapté à vos besoins, fourniture de solution
+                performante pour une gestion optimum de votre entreprise.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -73,15 +72,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
+            src='./maintenance info 1.png'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>Le Maintenance Informatique</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Réparation et entretien de vos matériels, proposition de monitoring des
+              infrastructures, infogérance disponible à tout moment.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -89,15 +88,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='./IOT.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>L'internet of Thing</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Installation de vos reseaux d'appareils physiques, fournitures des capteurs
+              et logiciels essentiels à vos besoins d'accès à internet.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -105,15 +104,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='./Location.png'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>La location</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+                Leasing et location d'infrastructures informatiques pour
+                diminuer vos coût d'investissements.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -125,22 +124,21 @@ const Solution = () => {
     {/* //  seconde sider  */}
 
     <Accordion.Item eventKey="1">
-       <Accordion.Header>Mise en valeur de l’énergie renouvelable</Accordion.Header>
+       <Accordion.Header><strong>Mise en valeur de l’énergie renouvelable</strong></Accordion.Header>
        <Accordion.Body>
     <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/041.webp'
+            src='./logiciel énergie renouv.jpg'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>Logiciels</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Nous proposons des logiciels innovants respectant l'environnement.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -148,15 +146,14 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
+            src='./matériel_énergie_renouv-removebg-preview.png'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>Matériels</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+              Nous fournissons des materiels adaptés à des sources d'énergie propre.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
@@ -164,15 +161,15 @@ const Solution = () => {
       <MDBCol>
         <MDBCard>
           <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
+            src='./solutions énergierenouv.png'
             alt='...'
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
+            <MDBCardTitle><strong>Solutions</strong></MDBCardTitle>
             <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
+                        Si vous avez besoins de solution plus écologique,
+                        nous effectuons des études sur vos besoins dans un bref délai.
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>

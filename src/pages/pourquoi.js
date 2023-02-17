@@ -13,12 +13,12 @@ export default function App() {
     <div>
       <MDBCard>
          <MDBCardBody>
-      <h1>Pourquoi contactez nos services?</h1>
+      <h1 style={{color:'#256CE1'}}>Pourquoi contactez nos services?</h1>
     <MDBCardGroup>
       <MDBCard>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/041.webp' alt='...' position='top' />
+        <MDBCardImage src='./toujours à votre écoute1.png' alt='...' position='top' />
         <MDBCardBody>
-          <MDBCardTitle>Nous sommes toujours à votre écoute</MDBCardTitle>
+          <MDBCardTitle><strong>Nous sommes toujours à votre écoute</strong></MDBCardTitle>
           <MDBCardText>
        Pour rester réactif face à vos demandes, notre service client est joignable 24h/7j.
           </MDBCardText>
@@ -27,41 +27,32 @@ export default function App() {
       </MDBCard>
 
       <MDBCard>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/042.webp' alt='...' position='top' />
+        <MDBCardImage src='./meilleur service.webp' alt='...' position='top' />
         <MDBCardBody>
-          <MDBCardTitle>Card title</MDBCardTitle>
+          <MDBCardTitle><strong>Une meilleur service</strong></MDBCardTitle>
           <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-          </MDBCardText>
-          <MDBCardText>
-            <small className='text-muted'>Last updated 3 mins ago</small>
-          </MDBCardText>
+                  Nos techniciens vous proposent des solutions adaptées en fonction de vos besoins.
+                  Faites confiance en notre savoir-faire.
+                </MDBCardText>
+          
         </MDBCardBody>
       </MDBCard>
 
       <MDBCard>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/043.webp' alt='...' position='top' />
+        <MDBCardImage src='./réel accomp.jpg' alt='...' position='top' />
         <MDBCardBody>
-          <MDBCardTitle>Card title</MDBCardTitle>
+          <MDBCardTitle><strong>Un réel Accompagement</strong></MDBCardTitle>
           <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content. This
-            card has even longer content than the first to show that equal height action.
-          </MDBCardText>
-          <MDBCardText>
-            <small className='text-muted'>Last updated 3 mins ago</small>
+            Quels que soient vos besoins, notre équipe vous accompagne dans votre projet.
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>
       <MDBCard>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/043.webp' alt='...' position='top' />
+        <MDBCardImage src='./gestion.webp' alt='...' position='top' />
         <MDBCardBody>
-          <MDBCardTitle>Card title</MDBCardTitle>
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content. This
-            card has even longer content than the first to show that equal height action.
-          </MDBCardText>
-          <MDBCardText>
-            <small className='text-muted'>Last updated 3 mins ago</small>
+          <MDBCardTitle><strong>Un meilleur Gestion</strong></MDBCardTitle>
+                <MDBCardText>
+                  Vous pouvez vous concentrer à votre coeur de métier, car nous gérons vos accés dès l'installation à la maintenance.
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>
