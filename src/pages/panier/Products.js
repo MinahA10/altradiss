@@ -4,6 +4,8 @@ import { BsFillCartFill } from "react-icons/bs";
 import {useNavigate} from 'react-router-dom'
 import { useSelector } from 'react-redux';
 
+import React, { useState } from 'react';
+import { MDBCollapse, MDBListGroup, MDBRipple, MDBListGroupItem, MDBIcon, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu,MDBModal } from 'mdb-react-ui-kit';
 function Product() {
 
   const navigate = useNavigate()
@@ -16,13 +18,42 @@ function Product() {
     })
     return total
   }
+  const [centredModal, setCentredModal] = useState(false);
 
+  const toggleShow = () => setCentredModal(!centredModal);
+  
   return (
+
+     
     
+    
+
     <div className="home">
-      
       <div className="home__container">
-        
+        <MDBDropdown>
+          <MDBDropdownToggle>Choix de produit</MDBDropdownToggle>
+           <MDBDropdownMenu>
+        <MDBCollapse tag="nav" className="d-lg-block bg-white sidebar">
+        <div className="position-sticky">
+          <MDBListGroup flush className="mx-3 mt-4">
+            <MDBRipple rippleTag='span'>
+              <MDBListGroupItem tag='a' href='#' action className='border-0 border-bottom rounded rounded'>
+                <MDBIcon fas icon="tachometer-alt me-3" />
+                Software
+              </MDBListGroupItem>
+            </MDBRipple>
+
+            <MDBRipple rippleTag='span'>
+              <MDBListGroupItem tag='a' href='#' action className='border-0 rounded'>
+                <MDBIcon fas icon="money-bill me-3" />
+                hardware
+              </MDBListGroupItem>
+            </MDBRipple>
+          </MDBListGroup>
+        </div>
+            </MDBCollapse>
+            </MDBDropdownMenu>
+      </MDBDropdown>
         <div className="home__row">
           
           <Item
@@ -30,7 +61,9 @@ function Product() {
             title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
             price={98}
             image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+             onClick={toggleShow}
           />
+          
           
           <Item
             id={2}
@@ -73,7 +106,8 @@ function Product() {
         <BsFillCartFill id='cartIcon'/>
         <p>{getTotalQuantity() || 0}</p>
       </div>
-    </div>
+      </div>
+      
   )
 }
 

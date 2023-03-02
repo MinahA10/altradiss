@@ -27,7 +27,7 @@ const Navbar = () => {
           <NavLink to='/pourquoi' activeStyle>
             Pourquoi Nous ?
           </NavLink>
-          <NavLink to='/Products' activeStyle>
+          <NavLink to='/produit' activeStyle>
            Nos produits
           </NavLink>
           <NavLink to='/profil' activeStyle>

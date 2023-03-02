@@ -33,7 +33,14 @@
     padding: 8px 30px;
     border: none;
 }
-
+.detail{
+    background: #ffffff;
+        margin-top: 10px;
+        color: #111;
+        border-radius: 20px;
+        padding: 8px 30px;
+        border: none;
+}
 .item>button:hover {
     background: #f7d322;
 }

@@ -16,7 +16,7 @@ import "swiper/swiper.min.css";
 import Footer from "./pages/footer";
 import Scroll from "./components/scrolltop";
 import Cart from './pages/panier/Cart';
-import Product from './pages/panier/Products';
+import Product from './pages/produits/produit';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import Signaler from './pages/signaler';
 import ProfilePage from './pages/profil';
@@ -39,7 +39,7 @@ function App() {
         <Route path='/signUpbis' element={<SignUpbis/>} />
         <Route path='/*' element={<Error />} />
         <Route path='/cart' element={<Cart />} />
-        <Route path='/Products' element={<Product />} />
+        <Route path='/produit' element={<Product />} />
         <Route path='/signaler' element={<Signaler />} />
         <Route path='/commandsp' element={<Commande />} />
        </Routes>
